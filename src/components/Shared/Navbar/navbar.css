@@ -1,11 +1,20 @@
+header {
+	z-index: 1000;
+	position: relative;
+	width: 100%;
+}
+
 .main_menu li {
 	margin: 0 15px;
 }
 
 .sticky {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
 	position: fixed;
 	top: 0;
-	background: var(--primaryDark);
-	z-index: 9;
-	box-shadow: 5px 3px 15px 1px var(--primaryDark);
+	width: 100%;
+	z-index: 999;
+	left: 0;
+	border-bottom: 1px solid #e0e6f6;
+	background: #fff;
 }
