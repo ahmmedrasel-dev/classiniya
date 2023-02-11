@@ -1,0 +1,11 @@
+.main_menu li {
+	margin: 0 15px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	background: var(--primaryDark);
+	z-index: 9;
+	box-shadow: 5px 3px 15px 1px var(--primaryDark);
+}
