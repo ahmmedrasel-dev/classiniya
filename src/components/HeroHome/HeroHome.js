@@ -8,7 +8,7 @@ import h_banner5 from '../../assets/images/h_banner5.png';
 
 const HeroHome = () => {
   return (
-    <section className='hero_home py-10'>
+    <section className='hero_home lg:py-10 py-6'>
       <div className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="heru_left lg:p-12 xl:p-20 p-4">
