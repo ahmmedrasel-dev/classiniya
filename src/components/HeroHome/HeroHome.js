@@ -5,10 +5,11 @@ import h_banner2 from '../../assets/images/h_banner2.png';
 import h_banner3 from '../../assets/images/h_banner3.png';
 import h_banner4 from '../../assets/images/h_banner4.png';
 import h_banner5 from '../../assets/images/h_banner5.png';
+import SearchBox from '../SearchBox/SearchBox';
 
 const HeroHome = () => {
   return (
-    <section className='hero_home lg:py-10 py-6'>
+    <section className='hero_home lg:py-16 py-6'>
       <div className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="heru_left lg:p-12 xl:p-20 p-4">
@@ -16,8 +17,8 @@ const HeroHome = () => {
             <p className='py-8'>Each month, more than 3 million job seekers turn to website in their search for work, making over 140,000 applications every single day</p>
 
             <div className="hero_action">
-              <button className='btn bg-primary border-0 mr-4'>Get Started</button>
-              <button className='btn btn-outline border-primary text-primary'>Learn More</button>
+              <button className='btn bg-primary border-0 mr-4 capitalize'>Get Started</button>
+              <button className='btn btn-outline border-primary text-primary capitalize'>Learn More</button>
             </div>
           </div>
 
@@ -40,6 +41,11 @@ const HeroHome = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Search Box */}
+        <div className='mt-8 search_box_container'>
+          <SearchBox></SearchBox>
         </div>
       </div>
     </section>
