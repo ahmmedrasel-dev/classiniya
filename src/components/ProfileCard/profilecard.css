@@ -1,0 +1,44 @@
+.profile_card .card_container {
+	position: relative;
+	text-align: center;
+	padding: 40px 15px 30px;
+}
+
+.cover_photo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+}
+
+.profile_card .card_container .cover_photo img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px 8px 0 0;
+}
+
+.profile_card .card_container .profile_pto {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.profile_card .card_container .profile_pto a {
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	width: 95px;
+}
+
+.profile_card .card_container .profile_pto a img {
+	width: 100%;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.12);
+}
+
+.verifed_profile {
+	position: absolute;
+	top: 60%;
+	left: 58%;
+}
