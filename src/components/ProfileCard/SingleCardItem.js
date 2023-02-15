@@ -20,12 +20,12 @@ const SingleCardItem = ({ profile }) => {
         </div>
         <div className="title_location">
           <h4 className='text-lg font-bold'><a href="/">{name}</a></h4>
-          <p className='text-sm font-light'>{location}</p>
+          <p className='text-sm font-light capitalize'>{location}</p>
         </div>
       </div>
 
       <div className="card_body py-8">
-        <h4 className='text-left uppercase font-bold'>Skills:</h4>
+        <h4 className='text-left uppercase font-bold text-secondary'>Skills:</h4>
         <div className="skills flex justify-between mt-4">
           {
             skills.map((item, index) => <img className='w-[30px] drop-shadow-md' key={index} src={item} alt={name} />)
