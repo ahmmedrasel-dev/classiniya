@@ -1,7 +1,5 @@
 import React from 'react';
 import { MdVerified } from 'react-icons/md';
-import cover1 from '../../assets/images/profile_cover1.jpeg';
-import profile_pto from '../../assets/images/profile_pto1.jpeg'
 
 const SingleCardItem = ({ profile }) => {
   const { name, location, skills, profile_photo, cover_photo } = profile;

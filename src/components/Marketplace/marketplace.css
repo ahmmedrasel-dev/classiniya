@@ -25,3 +25,33 @@
 	bottom: 20px;
 	left: 20px;
 }
+
+.swiper-button-next.slide_next_btn::after,
+.swiper-button-prev.slide_prev_btn::after {
+	content: none;
+}
+
+.slide_next_btn {
+	background-color: #fff;
+	right: calc(0%);
+	top: calc(85%);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.slide_prev_btn {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #fff;
+	left: calc(82%);
+	top: calc(85%);
+}
+
+@media (min-width: 1280px) {
+	.slide_prev_btn {
+		left: calc(86%);
+		top: calc(85%);
+	}
+}
