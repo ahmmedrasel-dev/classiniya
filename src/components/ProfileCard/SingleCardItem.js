@@ -6,7 +6,7 @@ import { FaBehance } from 'react-icons/fa';
 import { SiNetlify } from 'react-icons/si';
 
 const SingleCardItem = ({ profile }) => {
-  const { name, location, skills, profile_photo, cover_photo, label, skill_tag } = profile;
+  const { name, location, skills, profile_photo, cover_photo, label, skill_tag, flag } = profile;
   return (
     <div className="card_container shadow-lg rounded-lg mb-8">
       <div className="card_heading">
@@ -21,7 +21,7 @@ const SingleCardItem = ({ profile }) => {
             <img src={profile_photo} alt="" />
           </a>
 
-          <div className='verifed_profile tooltip' data-tip="Verified Profile">
+          <div className='verifed_profile tooltip' data-tip="Verified">
             <BsFillPatchCheckFill className='text-blue-600 text-xl' />
           </div>
         </div>
@@ -29,7 +29,8 @@ const SingleCardItem = ({ profile }) => {
           <h4 className='text-lg font-bold'><a href="/">{name}</a></h4>
           <div className='flex justify-center items-center'>
             <span className='mr-1'><GrLocation /></span>
-            <p className='text-sm font-light capitalize'>{location}</p>
+            <p className='text-sm font-light capitalize mr-2'>{location}</p>
+            {flag}
           </div>
         </div>
       </div>

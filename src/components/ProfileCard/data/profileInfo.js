@@ -11,7 +11,7 @@ import profile3 from '../../../assets/images/profile_pto3.jpeg';
 import profile4 from '../../../assets/images/profile_pto4.jpeg';
 import cover1 from '../../../assets/images/profile_cover1.jpeg';
 import cover2 from '../../../assets/images/profile_cover2.jpeg';
-
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const profile = [
   {
@@ -20,6 +20,7 @@ const profile = [
     "cover_photo": cover1,
     "name": "Romon Ahmed",
     "location": "Cumilla, Bangladesh",
+    "flag": <span class="fi fi-bd"></span>,
     "label": "Most popular",
     "skill_tag": ['Html5', 'Css3', 'Javascript', 'React'],
     "skills": [
@@ -36,6 +37,7 @@ const profile = [
     "label": "Featured",
     "name": "Sydul Islam",
     "location": "Chittagon, Bangladesh",
+    "flag": <span class="fi fi-bd"></span>,
     "skill_tag": ['Html5', 'Css3', 'Javascript', 'React'],
     "skills": [
       css3,
@@ -51,6 +53,7 @@ const profile = [
     "label": "Boost",
     "name": "Byjid Ahmed",
     "location": "Kolkata, India",
+    "flag": <span class="fi fi-in"></span>,
     "skill_tag": ['Node Js', 'Javascript', 'MongoDb', 'Next js'],
     "skills": [
       node,
@@ -66,6 +69,7 @@ const profile = [
     "label": "Sponsore",
     "name": "Salamn Ahmmed",
     "location": "New York, Usa",
+    "flag": <span class="fi fi-us"></span>,
     "skill_tag": ['React', 'Next Js', 'Node Js', 'Typescript'],
     "skills": [
       react,
@@ -81,6 +85,7 @@ const profile = [
     "name": "Abu Bakar",
     "label": "",
     "location": "Karachi, Pakistan",
+    "flag": <span class="fi fi-pk"></span>,
     "skill_tag": ['React', 'Javascript', 'MongoDb', 'Next js'],
     "skills": [
       react,
@@ -96,6 +101,7 @@ const profile = [
     "name": "Habibur Rahman",
     "label": "",
     "location": "Melborn, Australia",
+    "flag": <span class="fi fi-au"></span>,
     "skill_tag": ['React', 'Javascript', 'MongoDb', 'Next js'],
     "skills": [
       react,
@@ -110,7 +116,8 @@ const profile = [
     "cover_photo": cover1,
     "name": "Rohan Isalm",
     "label": "Most Popular",
-    "location": "tokio, Japan",
+    "location": "Tokio, Japan",
+    "flag": <span class="fi fi-jp"></span>,
     "skill_tag": ['Javasript', 'Typescript', 'MongoDb', 'Next js'],
     "skills": [
       javascrip,
@@ -126,6 +133,7 @@ const profile = [
     "name": "Robiul Islam",
     "label": "",
     "location": "Riyad, Saudiarabia",
+    "flag": <span class="fi fi-sa"></span>,
     "skill_tag": ['React', 'Typescript', 'MongoDb', 'Next js'],
     "skills": [
       typscript,
