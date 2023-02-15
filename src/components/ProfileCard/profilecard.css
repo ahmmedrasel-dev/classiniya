@@ -9,6 +9,24 @@
 	top: 0;
 	left: 0;
 	height: 100px;
+	overflow: hidden;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.cover_photo span {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 10px;
+}
+
+.card_heading .cover_photo img {
+	transition: transform 0.3s ease-in-out;
+}
+
+.card_heading:hover .cover_photo img {
+	transform: scale(1.2);
 }
 
 .profile_card .card_container .cover_photo img {
@@ -41,4 +59,23 @@
 	position: absolute;
 	top: 64%;
 	left: 61%;
+}
+.profile_pto a {
+	position: relative;
+}
+
+.profile_pto a::before {
+	position: absolute;
+	content: url(../../assets/images/chat_round_shape5.png);
+	top: -10px;
+	left: -10px;
+}
+
+.card_container {
+	transition: transform 0.5s ease-in-out;
+}
+
+.card_container:hover {
+	transform: translateY(-10px);
+	box-shadow: 1px 1px 10px 2px var(--primary);
 }

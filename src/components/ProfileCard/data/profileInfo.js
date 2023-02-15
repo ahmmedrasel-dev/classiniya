@@ -20,6 +20,8 @@ const profile = [
     "cover_photo": cover1,
     "name": "Romon Ahmed",
     "location": "Cumilla, Bangladesh",
+    "label": "Most popular",
+    "skill_tag": ['Html5', 'Css3', 'Javascript', 'React'],
     "skills": [
       react,
       javascrip,
@@ -31,8 +33,10 @@ const profile = [
     "_id": 2,
     "profile_photo": profile2,
     "cover_photo": cover2,
+    "label": "Featured",
     "name": "Sydul Islam",
     "location": "Chittagon, Bangladesh",
+    "skill_tag": ['Html5', 'Css3', 'Javascript', 'React'],
     "skills": [
       css3,
       javascrip,
@@ -44,8 +48,10 @@ const profile = [
     "_id": 3,
     "profile_photo": profile3,
     "cover_photo": cover1,
+    "label": "Boost",
     "name": "Byjid Ahmed",
     "location": "Kolkata, India",
+    "skill_tag": ['Node Js', 'Javascript', 'MongoDb', 'Next js'],
     "skills": [
       node,
       javascrip,
@@ -57,8 +63,10 @@ const profile = [
     "_id": 4,
     "profile_photo": profile4,
     "cover_photo": cover2,
+    "label": "Sponsore",
     "name": "Salamn Ahmmed",
     "location": "New York, Usa",
+    "skill_tag": ['React', 'Next Js', 'Node Js', 'Typescript'],
     "skills": [
       react,
       nextjs,
@@ -71,7 +79,9 @@ const profile = [
     "profile_photo": profile1,
     "cover_photo": cover1,
     "name": "Abu Bakar",
+    "label": "",
     "location": "Karachi, Pakistan",
+    "skill_tag": ['React', 'Javascript', 'MongoDb', 'Next js'],
     "skills": [
       react,
       javascrip,
@@ -84,7 +94,9 @@ const profile = [
     "profile_photo": profile2,
     "cover_photo": cover2,
     "name": "Habibur Rahman",
+    "label": "",
     "location": "Melborn, Australia",
+    "skill_tag": ['React', 'Javascript', 'MongoDb', 'Next js'],
     "skills": [
       react,
       javascrip,
@@ -97,7 +109,9 @@ const profile = [
     "profile_photo": profile3,
     "cover_photo": cover1,
     "name": "Rohan Isalm",
+    "label": "Most Popular",
     "location": "tokio, Japan",
+    "skill_tag": ['Javasript', 'Typescript', 'MongoDb', 'Next js'],
     "skills": [
       javascrip,
       typscript,
@@ -110,7 +124,9 @@ const profile = [
     "profile_photo": profile4,
     "cover_photo": cover2,
     "name": "Robiul Islam",
+    "label": "",
     "location": "Riyad, Saudiarabia",
+    "skill_tag": ['React', 'Typescript', 'MongoDb', 'Next js'],
     "skills": [
       typscript,
       react,
