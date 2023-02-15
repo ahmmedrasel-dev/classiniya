@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdVerified } from 'react-icons/md';
+import { BsFillPatchCheckFill } from 'react-icons/bs';
 
 const SingleCardItem = ({ profile }) => {
   const { name, location, skills, profile_photo, cover_photo } = profile;
@@ -15,7 +15,7 @@ const SingleCardItem = ({ profile }) => {
           </a>
 
           <div className='verifed_profile'>
-            <MdVerified className='text-green-600 text-2xl' />
+            <BsFillPatchCheckFill className='text-blue-600 text-xl' />
           </div>
         </div>
         <div className="title_location">
@@ -28,15 +28,15 @@ const SingleCardItem = ({ profile }) => {
         <h4 className='text-left uppercase font-bold'>Skills:</h4>
         <div className="skills flex justify-between mt-4">
           {
-            skills.map((item, index) => <img className='w-[40px] drop-shadow-md' key={index} src={item} alt={name} />)
+            skills.map((item, index) => <img className='w-[30px] drop-shadow-md' key={index} src={item} alt={name} />)
           }
 
         </div>
       </div>
 
       <div className="card_footer flex justify-between">
-        <button className='btn bg-primary border-0 w-[45%] btn-md'>View Proile</button>
-        <button className='btn bg-secondary btn-md w-[45%]'>Hire</button>
+        <button className='btn bg-primary border-0 w-[45%] btn-md hover:bg-secondary'>View Proile</button>
+        <button className='btn bg-secondary btn-md w-[45%] hover:bg-primary hover:border-0'>Hire</button>
       </div>
     </div>
   );
