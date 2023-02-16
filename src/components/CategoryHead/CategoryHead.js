@@ -3,6 +3,7 @@ import './category_head.css';
 import bg from '../../assets/images/category_head_bg.jpeg';
 
 const CategoryHead = () => {
+
   return (
     <section className='parallax_section'>
       <div className='category_bg' style={{ backgroundImage: `url(${bg})` }}>

@@ -41,6 +41,33 @@ const CategoryFilter = () => {
               />
             </div>
           </div>
+
+          <div className='flex justify-between gap-4'>
+            <div className='flex items-center w-full relative'>
+              <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-secondary' /></span>
+              <Select
+                isClearable={isClearable}
+                options={location}
+                placeholder="All Listing Types"
+                className="select-bordered w-full select_allcountries"
+              />
+            </div>
+
+            <div className='flex items-center w-full relative'>
+              <span className='mr-2 absolute left-2'><BsListUl className='text-secondary' /></span>
+              <input className='input input-bordered input-md w-full px-8' type="text" placeholder='Waht are you looking for?' />
+            </div>
+
+            <div className='flex items-center w-full relative'>
+              <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-secondary' /></span>
+              <Select
+                isClearable={isClearable}
+                options={location}
+                placeholder="All Countries"
+                className="select_allcountries select-bordered w-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
