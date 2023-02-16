@@ -18,7 +18,7 @@ const SearchBox = () => {
 
           <div className='lg:flex flex:none'>
             <div className='location flex items-center'>
-              <span className='mr-2'><GrLocation /></span>
+              <span className='mr-2'><GrLocation className='text-secondary' /></span>
               <Select
                 isClearable={isClearable}
                 options={location}
