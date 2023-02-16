@@ -15,6 +15,18 @@ const Router = createBrowserRouter([
       {
         path: '/graphics-design',
         element: <Category></Category>
+      },
+      {
+        path: '/digital-markeitng',
+        element: <Category></Category>
+      },
+      {
+        path: '/programming-tech',
+        element: <Category></Category>
+      },
+      {
+        path: '/ai-models',
+        element: <Category></Category>
       }
     ]
   }

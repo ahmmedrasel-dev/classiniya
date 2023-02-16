@@ -1,0 +1,122 @@
+[
+	{
+		"_id": 1,
+		"name": "Graphics & Design",
+		"path": "graphics-design",
+		"child_category": [
+			{
+				"name": "Print Deisign",
+				"image": "https://i.ibb.co/8zqGWMb/nft-1.jpg"
+			},
+			{
+				"name": "UI & UX",
+				"image": "https://i.ibb.co/8zqGWMb/nft-1.jpg"
+			},
+			{
+				"name": "Photoshop",
+				"image": "https://i.ibb.co/8zqGWMb/nft-1.jpg"
+			},
+			{
+				"name": "Illustrator",
+				"image": "https://i.ibb.co/8zqGWMb/nft-1.jpg"
+			},
+			{
+				"name": "Logo Design",
+				"image": "https://i.ibb.co/8zqGWMb/nft-1.jpg"
+			}
+		],
+		"image": "url"
+	},
+	{
+		"_id": 2,
+		"name": "Digital Marketing",
+		"path": "digital-markeitng",
+		"child_category": [
+			{
+				"name": "Social Media Marketing",
+				"image": "url"
+			},
+			{
+				"name": "Search Engine Optimization",
+				"image": "url"
+			},
+			{
+				"name": "Keyword Research",
+				"image": "url"
+			},
+			{
+				"name": "Socail Media Campaign",
+				"image": "url"
+			},
+			{
+				"name": "Booklisting",
+				"image": "url"
+			}
+		],
+		"image": "url"
+	},
+	{
+		"_id": 3,
+		"name": "Programing & Tech",
+		"path": "programming-tech",
+		"child_category": [
+			{
+				"name": "Frond Development",
+				"image": "url"
+			},
+			{
+				"name": "Backend Development",
+				"image": "url"
+			},
+			{
+				"name": "Blockchain Development",
+				"image": "url"
+			},
+			{
+				"name": "React Js Developer",
+				"image": "url"
+			},
+			{
+				"name": "Python Developer",
+				"image": "url"
+			},
+			{
+				"name": "Wordpress Developer",
+				"image": "url"
+			}
+		],
+		"image": "url"
+	},
+	{
+		"_id": 4,
+		"name": "AI Models",
+		"path": "ai-models",
+		"child_category": [
+			{
+				"name": "Frond Development",
+				"image": "url"
+			},
+			{
+				"name": "Backend Development",
+				"image": "url"
+			},
+			{
+				"name": "Blockchain Development",
+				"image": "url"
+			},
+			{
+				"name": "React Js Developer",
+				"image": "url"
+			},
+			{
+				"name": "Python Developer",
+				"image": "url"
+			},
+			{
+				"name": "Wordpress Developer",
+				"image": "url"
+			}
+		],
+		"image": "url"
+	}
+]

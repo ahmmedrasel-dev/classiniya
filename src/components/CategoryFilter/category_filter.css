@@ -2,6 +2,45 @@
 	padding: 20px 0;
 }
 
+.css-hlgwow {
+	padding: 7px 30px !important;
+}
+
 .css-1fdsijx-ValueContainer {
 	padding: 8px 32px !important;
+}
+
+.tab-button .Active {
+	background: var(--secondary);
+	color: var(--white);
+}
+
+.swiper-button-next.slide_next_btn::after,
+.swiper-button-prev.slide_prev_btn::after {
+	content: none;
+}
+
+.child_category .slide_next_btn {
+	background-color: var(--secondary);
+	right: calc(0%);
+	top: calc(85%);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.child_category .slide_prev_btn {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: var(--secondary);
+	left: calc(82%);
+	top: calc(85%);
+}
+
+@media (min-width: 1280px) {
+	.child_category .slide_prev_btn {
+		left: calc(91%);
+		top: calc(85%);
+	}
 }
