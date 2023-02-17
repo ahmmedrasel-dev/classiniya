@@ -11,7 +11,7 @@
 }
 
 .tab-button .Active {
-	background: var(--secondary);
+	background: var(--primary);
 	color: var(--white);
 }
 
@@ -36,6 +36,18 @@
 	background-color: var(--secondary);
 	left: calc(82%);
 	top: calc(85%);
+}
+
+.resultSticky {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+	position: fixed;
+	top: 80px;
+	width: 100%;
+	z-index: 999;
+	left: 0;
+	padding: 10px 40px;
+	border-bottom: 1px solid #e0e6f6;
+	background: #fff;
 }
 
 @media (min-width: 1280px) {

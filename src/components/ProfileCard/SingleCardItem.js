@@ -8,7 +8,7 @@ import { SiNetlify } from 'react-icons/si';
 const SingleCardItem = ({ profile }) => {
   const { name, location, skills, profile_photo, cover_photo, label, skill_tag, flag } = profile;
   return (
-    <div className="card_container shadow-lg rounded-lg mb-8">
+    <div className="card_container shadow-lg rounded-lg mb-8 bg-white">
       <div className="card_heading">
         <div className="cover_photo">
           <img src={cover_photo} alt="" />
@@ -34,7 +34,9 @@ const SingleCardItem = ({ profile }) => {
           </div>
         </div>
       </div>
+
       <div className="divider"></div>
+
       <div className='portfolio'>
         <ul className='flex justify-center gap-3'>
           <li><a href="/"><FiDribbble className='text-2xl hover:text-primary text-secondary' /></a></li>
@@ -64,8 +66,7 @@ const SingleCardItem = ({ profile }) => {
       <div className="divider"></div>
 
       <div className="card_footer flex justify-between">
-        <button className='btn bg-primary border-0 w-[45%] btn-sm hover:bg-secondary capitalize'>View Profile</button>
-        <button className='btn btn-sm hover:bg-secondary hover:border-0 btn-outline capitalize text-secondary border-secondary'>Hire</button>
+        <button className='btn bg-gray border-0 w-full hover:bg-secondary capitalize'>View Profile</button>
       </div>
     </div>
   );

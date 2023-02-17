@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { BsBookmark, BsImages, BsListUl, BsSearch, BsSliders } from 'react-icons/bs';
+import { BsBookmark, BsGrid3X3, BsImages, BsListUl, BsSearch, BsSliders } from 'react-icons/bs';
 import location from '../SearchBox/selction_option/location';
 import Select from 'react-select';
 import './category_filter.css';
 import statusOption from '../../utils/statusOption';
 import { GrLocation } from 'react-icons/gr';
 import { IoClose } from 'react-icons/io5';
+import { AiOutlineOrderedList } from 'react-icons/ai';
 import { FaAngleLeft, FaAngleRight, FaPlus } from 'react-icons/fa';
 import MyCheckbox from '../../utils/myCheckBox/MyCheckbox';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
+import useSticky from '../../Hooks/useSticky';
+import classNames from 'classnames';
 const CategoryFilter = ({ category }) => {
   const { child_category } = category;
   const [isClearable, setisClearable] = useState(true);
@@ -28,17 +31,53 @@ const CategoryFilter = ({ category }) => {
     )
   }
 
+  const { stickyRef, resultSticky } = useSticky();
+
+  const shortOpton = [
+    { value: 'Default', label: 'Default' },
+    { value: 'Popularity', label: 'Popularity' },
+    { value: 'Most Liked', label: 'Most Liked' },
+    { value: 'Most Rated', label: 'Most Rated' },
+    { value: 'Price: low to high', label: 'Price: low to high' },
+    { value: 'Price: hight to low', label: 'Price: hight to low' },
+  ]
+
   return (
-    <section className='py-12'>
+    <section>
       <div className="w-full xl:max-w-screen-xl lg:max-w-screen-lg mx-auto">
+        <div ref={stickyRef} className={classNames('result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-white', { resultSticky })}>
+          <div className='w-[65%]'>
+            <h2 className='text-xl font-bold'>Results For: <span className='text-primary'>{category.name}</span></h2>
+          </div>
+          <div className='flex justify-between items-center w-[35%]'>
+            <span className='mr-2'>Sort by:</span>
+            <Select
+              className="w-[250px]"
+              classNamePrefix="select"
+              name="color"
+              defaultValue={shortOpton[0]}
+              options={shortOpton}
+            />
+
+            <div className='flex gap-4 ml-4'>
+              <div className="tooltip tooltip-primary" data-tip="Grid View">
+                <BsGrid3X3 className='text-2xl' />
+              </div>
+              <div className="tooltip tooltip-primary" data-tip="List View">
+                <AiOutlineOrderedList className='text-2xl' />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="flex justify-between gap-2 tab-button">
-          <div onClick={() => handleTabClick(1)} className={`shadow-md flex items-center gap-2 w-1/2 border p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders /></span><span>Filters</span></div>
-          <div onClick={() => handleTabClick(2)} className={`flex items-center gap-2 w-1/2 border p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages /></span><span>Category</span></div>
+          <div onClick={() => handleTabClick(1)} className={`bg-white shadow-md flex items-center gap-2 w-1/2 border p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders /></span><span>Filters</span></div>
+          <div onClick={() => handleTabClick(2)} className={`bg-white flex items-center gap-2 w-1/2 border p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages /></span><span>Category</span></div>
         </div>
 
         <div className="tab_content">
           {
-            activeTab === 1 && <div className='border p-4 mt-12 rounded-lg border-gray shadow-lg'>
+            activeTab === 1 && <div className='bg-white border p-4 mt-2 rounded-lg border-gray shadow-lg'>
               <div className='flex justify-between gap-4'>
                 <div className='flex items-center w-full relative'>
                   <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-secondary' /></span>
@@ -110,12 +149,12 @@ const CategoryFilter = ({ category }) => {
                 )
               }
 
-              <button className='btn bg-secondary border-0 capitalize' onClick={() => setShowMoreOption(!showMoreOption)}>{!showMoreOption ? <FaPlus className='mr-2' /> : <IoClose className='mr-2' />}{!showMoreOption ? 'More' : 'Close'} Options</button>
+              <button className='btn bg-primary border-0 capitalize' onClick={() => setShowMoreOption(!showMoreOption)}>{!showMoreOption ? <FaPlus className='mr-2' /> : <IoClose className='mr-2' />}{!showMoreOption ? 'More' : 'Close'} Options</button>
             </div>
           }
 
           {
-            activeTab === 2 && <div className='child_category border px-10 pt-10 mt-12 rounded-lg border-gray shadow-lg'>
+            activeTab === 2 && <div className='bg-white child_category border px-10 pt-10 mt-2 rounded-lg border-gray shadow-lg'>
               <Swiper
                 navigation={{
                   nextEl: '.swiper-button-next',
@@ -163,9 +202,6 @@ const CategoryFilter = ({ category }) => {
           }
 
         </div>
-
-
-
 
       </div>
     </section>
