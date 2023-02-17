@@ -68,7 +68,7 @@ const CategoryFilter = ({ category }) => {
 
               <div className='flex justify-between gap-4'>
                 <div className='flex items-center w-full relative'>
-                  <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-secondary' /></span>
+                  <span className='mr-2 absolute left-2 z-[1]'><BsListUl className='text-secondary' /></span>
                   <Select
                     isClearable={isClearable}
                     options={statusOption}

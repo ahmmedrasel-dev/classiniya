@@ -50,7 +50,7 @@ const SingleCardItem = ({ profile }) => {
       <div className="card_body">
         <div className="skills_tag flex justify-center gap-2 flex-wrap">
           {
-            skill_tag.map((item, index) => <div className="badge badge-outline">{item}</div>)
+            skill_tag.map((item, index) => <div className="btn btn-xs bg-gray rounded-full border-0 hover:bg-secondary">{item}</div>)
           }
         </div>
         <div className="skills flex justify-center gap-3 mt-4">
