@@ -9,8 +9,8 @@ const Navbar = () => {
   const { stickyRef, sticky } = useSticky();
   return (
     <header>
-      <div ref={stickyRef} className={classNames("navbar flex items-center justify-between bg-primaryDark xl:gap-2  xl:px-8 py-4 sm:px-4 px-2 ", { sticky })}>
-        <a href='/' className="btn btn-ghost normal-case text-xl text-secondary">Classiniya</a>
+      <div ref={stickyRef} className={classNames("navbar flex items-center justify-between bg-base-100 dark:bg-gray-800 xl:gap-2  xl:px-8 py-4 sm:px-4 px-2 ", { sticky })}>
+        <a href='/' className="btn btn-ghost normal-case text-xl text-[#05264e] dark:text-base-100">Classiniya</a>
 
         <div className='flex:none'>
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,8 +25,8 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex">
           <ul>
-            <NavLink className="mx-4 text-secondary hover:text-primary">Register</NavLink>
-            <button className='btn bg-primary border-0 hover:bg-secondary'>Sign in</button>
+            <NavLink className="mx-4 text-[#05264e] hover:text-primary dark:text-base-100">Register</NavLink>
+            <button className='btn bg-[#3c65f5] dark:bg-base-100 dark:text-gray-900 border-0 hover:bg-secondary'>Sign in</button>
           </ul>
         </div>
       </div>

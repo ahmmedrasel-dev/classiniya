@@ -32,7 +32,6 @@
 }
 
 .slide_next_btn {
-	background-color: #fff;
 	right: calc(0%);
 	top: calc(85%);
 	height: 50px;
@@ -44,7 +43,6 @@
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
-	background-color: #fff;
 	left: calc(82%);
 	top: calc(85%);
 }

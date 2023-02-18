@@ -3,15 +3,28 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        "primary": "var(--primary)",
-        "secondary": "var(--secondary)",
-        "info": "var(--info)",
-        "white": "var(--white)",
-        "gray": "var(--gray)",
-      }
+        dark: {
+          primary: '#292929',
+          secondary: '#05264e',
+          accent: '#FBBF24',
+          text: '#FFFFFF',
+          background: '#181818'
+        },
+        light: {
+          primary: '#FFFFFF',
+          secondary: '#05264e',
+          accent: '#FBBF24',
+          text: '#292929',
+          background: '#F3F4F6'
+        },
+      },
+
+      primary: '#3c65f5',
+      secondary: '#05264e'
     },
   },
   plugins: [require("daisyui")],
