@@ -19,8 +19,8 @@ const CategoryFilter = ({ category }) => {
   const [showMoreOption, setShowMoreOption] = useState(false);
   const [activeTab, setActiveTab] = useState(1);
 
-  const handleTabClick = (index) => {
-    setActiveTab(index);
+  const handleTabClick = (id) => {
+    setActiveTab(id);
   };
 
   const option = () => {
@@ -45,12 +45,12 @@ const CategoryFilter = ({ category }) => {
   return (
     <section>
       <div className="w-full xl:max-w-screen-xl lg:max-w-screen-lg mx-auto">
-        <div ref={stickyRef} className={classNames('result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-white', { resultSticky })}>
+        <div ref={stickyRef} className={classNames('result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-base-100 dark:bg-gray-900', { resultSticky })}>
           <div className='w-[65%]'>
-            <h2 className='text-xl font-bold'>Results For: <span className='text-primary'>{category.name}</span></h2>
+            <h2 className='text-xl font-bold dark:text-base-100'>Results For: <span className='text-[#3c65f5]'>{category.name}</span></h2>
           </div>
           <div className='flex justify-between items-center w-[35%]'>
-            <span className='mr-2'>Sort by:</span>
+            <span className='mr-2 dark:text-base-100'>Sort by:</span>
             <Select
               className="w-[250px]"
               classNamePrefix="select"
@@ -61,26 +61,27 @@ const CategoryFilter = ({ category }) => {
 
             <div className='flex gap-4 ml-4'>
               <div className="tooltip tooltip-primary" data-tip="Grid View">
-                <BsGrid3X3 className='text-2xl' />
+                <BsGrid3X3 className='text-2xl dark:text-base-100' />
               </div>
               <div className="tooltip tooltip-primary" data-tip="List View">
-                <AiOutlineOrderedList className='text-2xl' />
+                <AiOutlineOrderedList className='text-2xl dark:text-base-100' />
               </div>
             </div>
           </div>
         </div>
 
         <div className="flex justify-between gap-2 tab-button">
-          <div onClick={() => handleTabClick(1)} className={`bg-white shadow-md flex items-center gap-2 w-1/2 border p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders /></span><span>Filters</span></div>
-          <div onClick={() => handleTabClick(2)} className={`bg-white flex items-center gap-2 w-1/2 border p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages /></span><span>Category</span></div>
+          <div onClick={() => handleTabClick(1)} className={`bg-base-100 dark:bg-gray-900 shadow-md flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders className='dark:text-base-100' /></span><span className='dark:text-base-100'>Filters</span></div>
+
+          <div onClick={() => handleTabClick(2)} className={`bg-base-100 dark:bg-gray-900 flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages className='dark:text-base-100' /></span><span className='dark:text-base-100'>Category</span></div>
         </div>
 
         <div className="tab_content">
           {
-            activeTab === 1 && <div className='bg-white border p-4 mt-2 rounded-lg border-gray shadow-lg'>
+            activeTab === 1 && <div className='bg-base-100 dark:bg-gray-900 border dark:border-0 p-4 mt-2 rounded-lg border-gray shadow-lg'>
               <div className='flex justify-between gap-4'>
                 <div className='flex items-center w-full relative'>
-                  <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-secondary' /></span>
+                  <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-[#05264e] dark:text-gray-900' /></span>
                   <Select
                     isClearable={isClearable}
                     options={option()}
@@ -90,12 +91,12 @@ const CategoryFilter = ({ category }) => {
                 </div>
 
                 <div className='flex items-center w-full relative'>
-                  <span className='mr-2 absolute left-2'><BsBookmark className='text-secondary' /></span>
+                  <span className='mr-2 absolute left-2'><BsBookmark className='text-[#05264e] dark:text-gray-900' /></span>
                   <input className='input input-bordered input-md w-full px-8' type="text" placeholder='Waht are you looking for?' />
                 </div>
 
                 <div className='flex items-center w-full relative'>
-                  <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-secondary' /></span>
+                  <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-[#05264e] dark:text-gray-900' /></span>
                   <Select
                     isClearable={isClearable}
                     options={location}
@@ -107,7 +108,7 @@ const CategoryFilter = ({ category }) => {
 
               <div className='flex justify-between gap-4'>
                 <div className='flex items-center w-full relative'>
-                  <span className='mr-2 absolute left-2 z-[1]'><BsListUl className='text-secondary' /></span>
+                  <span className='mr-2 absolute left-2 z-[1]'><BsListUl className='text-[#05264e] dark:text-gray-900' /></span>
                   <Select
                     isClearable={isClearable}
                     options={statusOption}
@@ -117,12 +118,12 @@ const CategoryFilter = ({ category }) => {
                 </div>
 
                 <div className='flex items-center w-full relative'>
-                  <span className='mr-2 absolute left-2'><GrLocation className='text-secondary' /></span>
+                  <span className='mr-2 absolute left-2'><GrLocation className='text-secondary dark:text-gray-900' /></span>
                   <input className='input input-bordered input-md w-full px-8' type="text" placeholder='Where to look?' />
                 </div>
 
                 <div className='flex items-center w-full'>
-                  <button className='btn bg-primary border-0 text-white w-full mx-auto hover:bg-secondary rounded-full'><BsSearch className='mr-3 text-white text-xl' /> Search</button>
+                  <button className='btn bg-[#3c65f5] border-0 text-base-100 w-full mx-auto hover:bg-secondary rounded-full capitalize'><BsSearch className='mr-3 text-white text-xl' /> Search</button>
                 </div>
               </div>
 
@@ -131,25 +132,25 @@ const CategoryFilter = ({ category }) => {
                   <>
                     <div className="divider"></div>
                     <div className='flex items-center mb-8'>
-                      <span className='mr-2'><BsListUl className='text-secondary' /></span>
-                      <h2>More Filters</h2>
+                      <span className='mr-2'><BsListUl className='text-secondary dark:text-base-100' /></span>
+                      <h2 className='dark:text-base-100'>More Filters</h2>
                     </div>
 
-                    <div className='grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-4'>
-                      <MyCheckbox label="online" />
-                      <MyCheckbox label="offline" />
-                      <MyCheckbox label="Best Selling" />
-                      <MyCheckbox label="Most Popular" />
-                      <MyCheckbox label="Most Popular" />
-                      <MyCheckbox label="Most Popular" />
-                      <MyCheckbox label="Most Popular" />
-                      <MyCheckbox label="Most Popular" />
+                    <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 mb-6'>
+                      <MyCheckbox id="1" label="online" />
+                      <MyCheckbox id="2" label="offline" />
+                      <MyCheckbox id="3" label="Best Selling" />
+                      <MyCheckbox id="4" label="Most Popular" />
+                      <MyCheckbox id="5" label="Most Popular" />
+                      <MyCheckbox id="6" label="Most Popular" />
+                      <MyCheckbox id="7" label="Most Popular" />
+                      <MyCheckbox id="8" label="Most Popular" />
                     </div>
                   </>
                 )
               }
 
-              <button className='btn bg-primary border-0 capitalize' onClick={() => setShowMoreOption(!showMoreOption)}>{!showMoreOption ? <FaPlus className='mr-2' /> : <IoClose className='mr-2' />}{!showMoreOption ? 'More' : 'Close'} Options</button>
+              <button className='btn bg-[#3c65f5] border-0 capitalize' onClick={() => setShowMoreOption(!showMoreOption)}>{!showMoreOption ? <FaPlus className='mr-2' /> : <IoClose className='mr-2' />}{!showMoreOption ? 'More' : 'Close'} Options</button>
             </div>
           }
 

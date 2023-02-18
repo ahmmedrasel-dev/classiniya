@@ -22,7 +22,7 @@ const Category = () => {
     return <div>Loading...</div>;
   }
   return (
-    <main className='bg-slate-100'>
+    <main className='bg-base-300 dark:bg-gray-800'>
       <CategoryHead category={singleCategory}></CategoryHead>
       <CategoryFilter category={singleCategory}></CategoryFilter>
       <ProfileCard></ProfileCard>

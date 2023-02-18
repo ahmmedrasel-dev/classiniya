@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <ParallaxProvider>
-        <div className="fixed -right-10 top-2/4 rotate-90">
+        <div className="fixed -right-10 top-2/4 rotate-90 z-50">
           <button className="btn gap-2 rounded-full">
             <FiSun />
             <label className="label cursor-pointer">
