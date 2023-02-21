@@ -59,6 +59,10 @@
 		right: calc(30%);
 	}
 
+	.slider_cover {
+		top: 0%;
+	}
+
 	.slide_prev_btn {
 		left: calc(30%);
 	}

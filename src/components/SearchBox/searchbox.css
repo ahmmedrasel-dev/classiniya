@@ -67,3 +67,18 @@
 		margin-bottom: 10px;
 	}
 }
+
+@media (min-width: 768px) {
+	.select_location,
+	.industry_location {
+		width: 100%;
+	}
+
+	.location::before {
+		content: none;
+	}
+
+	.location::after {
+		content: none;
+	}
+}
