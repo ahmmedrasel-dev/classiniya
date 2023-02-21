@@ -21,6 +21,7 @@ const Category = () => {
   if (!singleCategory) {
     return <div>Loading...</div>;
   }
+
   return (
     <main className='bg-base-300 dark:bg-gray-800'>
       <CategoryHead category={singleCategory}></CategoryHead>

@@ -53,3 +53,13 @@
 		top: calc(85%);
 	}
 }
+
+@media (max-width: 576px) {
+	.slide_next_btn {
+		right: calc(30%);
+	}
+
+	.slide_prev_btn {
+		left: calc(30%);
+	}
+}
