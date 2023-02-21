@@ -9,16 +9,16 @@ import h_banner5 from '../../assets/images/h_banner5.png';
 const HeroHome = () => {
 
   return (
-    <section className={`hero_home lg:py-16 py-6 bg-base-100 dark:bg-gray-800`}>
+    <section className={`hero_home lg:py-16 py-6 bg-white dark:bg-gray-800`}>
       <div className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="heru_left lg:p-12 xl:p-20 p-4">
-            <h1 className='lg:text-6xl text-5xl font-black text-[#05264e] dark:text-base-100'>Find Jobs, <br />Hire Creatives</h1>
-            <p className='py-8 dark:text-base-300'>Each month, more than 3 million job seekers turn to website in their search for work, making over 140,000 applications every single day</p>
+            <h1 className='lg:text-6xl text-5xl font-black text-[#05264e] dark:text-slate-100'>Find Jobs, <br />Hire Creatives</h1>
+            <p className='py-8 text-[#05264ee1] dark:text-slate-300'>Each month, more than 3 million job seekers turn to website in their search for work, making over 140,000 applications every single day</p>
 
             <div className="hero_action">
-              <button className='btn bg-[#3c65f5] dark:bg-base-100 dark:text-gray-900 border-0 mr-4 capitalize'>Get Started</button>
-              <button className='btn btn-outline border-[#3c65f5] dark:border-base-100 text-[#3c65f5] dark:text-base-100 capitalize'>Learn More</button>
+              <button className='btn bg-[#3c65f5] dark:bg-slate-100 dark:text-gray-900 border-0 mr-4 capitalize text-white hover:bg-[#05264e]'>Get Started</button>
+              <button className='btn btn-outline border-[#3c65f5] dark:border-slate-100 text-[#3c65f5] dark:text-slate-100 capitalize hover:bg-transparent hover:border hover:border-[#05264e]'>Learn More</button>
             </div>
           </div>
 

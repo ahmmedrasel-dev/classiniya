@@ -10,14 +10,14 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Marketplace = () => {
   return (
-    <section className='marketplace py-16 bg-primary dark:bg-gray-900'>
-      <div className='lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4'>
-        <div className="lg:flex flex:none justify-between items-center">
+    <section className='marketplace py-16 bg-[#3c65f5] dark:bg-gray-900'>
+      <div className='lg:max-w-screen-lg xl:max-w-screen-xl md:max-w-screen-md w-full mx-auto p-4'>
+        <div className="lg:flex flex:none justify-between items-center gap-4">
           <div className='lg:w-[40%] w-full'>
             <div className="market_content">
               <h2 className='text-4xl text-white font-semibold'>Explore the Marketplace</h2>
               <p className='py-8 text-white'>Search and connect with the right candidates faster. Tell us what you’ve looking for and we’ll get to work for you.</p>
-              <button className='btn bg-secondary dark:bg-base-100 dark:text-gray-900 border-0 hover:bg-transparent hover:border hover:border-white'>Explore <BsArrowRight className='text-xl ml-2' /></button>
+              <button className='btn bg-[#05264e] dark:bg-white dark:text-gray-900 border-0 hover:bg-transparent hover:border text-white hover:text-white hover:border-white'>Explore <BsArrowRight className='text-xl ml-2' /></button>
             </div>
           </div>
           <div className='lg:w-[60%] market_box mt-10 w-full'>
@@ -94,8 +94,8 @@ const Marketplace = () => {
                 </div>
               </SwiperSlide>
 
-              <div className='swiper-button-next slide_next_btn bg-base-100 dark:bg-gray-700'><FaAngleRight className='text-secondary dark:text-base-100 hover:text-primary text-2xl duration-200' /></div>
-              <div className='swiper-button-prev slide_prev_btn bg-base-100 dark:bg-gray-700'><FaAngleLeft className='text-secondary dark:text-base-100 hover:text-primary text-2xl duration-200 ' /></div>
+              <div className='swiper-button-next slide_next_btn bg-white dark:bg-gray-700'><FaAngleRight className='text-[#05264e] dark:text-white hover:text-[#3c65f5] text-2xl duration-200' /></div>
+              <div className='swiper-button-prev slide_prev_btn bg-white dark:bg-gray-700'><FaAngleLeft className='text-[#05264e] dark:text-white hover:text-[#3c65f5] text-2xl duration-200 ' /></div>
             </Swiper>
 
 
