@@ -29,7 +29,7 @@ const Main = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-[80%] bg-white text-base-content">
+          <ul className="menu p-4 w-[80%] bg-white dark:bg-gray-800 text-base-content">
             <Navlinks></Navlinks>
           </ul>
         </div>

@@ -43,7 +43,7 @@ const CategoryFilter = ({ category }) => {
       <div className="w-full xl:max-w-screen-xl lg:max-w-screen-lg mx-auto">
         <div className='result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-slate-100 dark:bg-gray-900'>
           <div className='w-[65%]'>
-            <h2 className='text-xl font-bold dark:text-base-100'>Results For: <span className='text-[#3c65f5]'>{category.name}</span></h2>
+            <h2 className='text-xl font-bold dark:text-slate-100'>Results For: <span className='text-[#3c65f5]'>{category.name}</span></h2>
           </div>
           <div className='flex justify-between items-center w-[35%]'>
             <span className='mr-2 dark:text-base-100'>Sort by:</span>
