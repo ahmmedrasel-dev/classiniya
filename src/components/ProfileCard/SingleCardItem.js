@@ -1,6 +1,5 @@
 import React from 'react';
 import { BsFillPatchCheckFill, BsGithub, BsLinkedin } from 'react-icons/bs';
-import { GrLocation } from 'react-icons/gr';
 import { FiDribbble } from 'react-icons/fi';
 import { FaBehance } from 'react-icons/fa';
 import { SiNetlify } from 'react-icons/si';
@@ -9,7 +8,7 @@ import { MdLocationOn } from 'react-icons/md';
 const SingleCardItem = ({ profile }) => {
   const { name, location, skills, profile_photo, cover_photo, label, skill_tag, flag } = profile;
   return (
-    <div className="card_container rounded-lg mb-8 bg-slate-100 dark:bg-gray-900">
+    <div className="card_container rounded-lg mb-8 bg-slate-100 dark:bg-gray-900 border-slate-300 dark:border-gray-700 border">
       <div className="card_heading">
         <div className="cover_photo">
           <img src={cover_photo} alt="" />
@@ -67,7 +66,7 @@ const SingleCardItem = ({ profile }) => {
       <div className="divider"></div>
 
       <div className="card_footer flex justify-between">
-        <button className='btn bg-[#3c65f5] border-0 w-full hover:bg-[#05264e] capitalize'>View Profile</button>
+        <button className='btn bg-[#3c65f5] text-white border-0 w-full hover:bg-[#05264e] capitalize'>View Profile</button>
       </div>
     </div>
   );

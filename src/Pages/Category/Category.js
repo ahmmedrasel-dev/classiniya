@@ -23,7 +23,7 @@ const Category = () => {
   }
 
   return (
-    <main className='bg-base-300 dark:bg-gray-800'>
+    <main className='bg-white dark:bg-gray-800'>
       <CategoryHead category={singleCategory}></CategoryHead>
       <CategoryFilter category={singleCategory}></CategoryFilter>
       <ProfileCard></ProfileCard>

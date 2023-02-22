@@ -11,11 +11,9 @@ import { FaAngleLeft, FaAngleRight, FaPlus } from 'react-icons/fa';
 import MyCheckbox from '../../utils/myCheckBox/MyCheckbox';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
-import useSticky from '../../Hooks/useSticky';
-import classNames from 'classnames';
 const CategoryFilter = ({ category }) => {
   const { child_category } = category;
-  const [isClearable, setisClearable] = useState(true);
+  const [isClearable] = useState(true);
   const [showMoreOption, setShowMoreOption] = useState(false);
   const [activeTab, setActiveTab] = useState(1);
 
@@ -31,8 +29,6 @@ const CategoryFilter = ({ category }) => {
     )
   }
 
-  const { stickyRef, resultSticky } = useSticky();
-
   const shortOpton = [
     { value: 'Default', label: 'Default' },
     { value: 'Popularity', label: 'Popularity' },
@@ -43,9 +39,9 @@ const CategoryFilter = ({ category }) => {
   ]
 
   return (
-    <section>
+    <section className='mt-2'>
       <div className="w-full xl:max-w-screen-xl lg:max-w-screen-lg mx-auto">
-        <div ref={stickyRef} className={classNames('result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-base-100 dark:bg-gray-900', { resultSticky })}>
+        <div className='result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-slate-100 dark:bg-gray-900'>
           <div className='w-[65%]'>
             <h2 className='text-xl font-bold dark:text-base-100'>Results For: <span className='text-[#3c65f5]'>{category.name}</span></h2>
           </div>
@@ -71,14 +67,14 @@ const CategoryFilter = ({ category }) => {
         </div>
 
         <div className="flex justify-between gap-2 tab-button">
-          <div onClick={() => handleTabClick(1)} className={`bg-base-100 dark:bg-gray-900 shadow-md flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders className='dark:text-base-100' /></span><span className='dark:text-base-100'>Filters</span></div>
+          <div onClick={() => handleTabClick(1)} className={`bg-slate-100 dark:bg-gray-900 shadow-md flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders className='dark:text-base-100' /></span><span className='dark:text-base-100'>Filters</span></div>
 
-          <div onClick={() => handleTabClick(2)} className={`bg-base-100 dark:bg-gray-900 flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages className='dark:text-base-100' /></span><span className='dark:text-base-100'>Category</span></div>
+          <div onClick={() => handleTabClick(2)} className={`bg-slate-100 dark:bg-gray-900 flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages className='dark:text-base-100' /></span><span className='dark:text-base-100'>Category</span></div>
         </div>
 
         <div className="tab_content">
           {
-            activeTab === 1 && <div className='bg-base-100 dark:bg-gray-900 border dark:border-0 p-4 mt-2 rounded-lg border-gray shadow-lg'>
+            activeTab === 1 && <div className='bg-slate-100 dark:bg-gray-900 border dark:border-0 p-4 mt-2 rounded-lg border-gray shadow-lg'>
               <div className='flex justify-between gap-4'>
                 <div className='flex items-center w-full relative'>
                   <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-[#05264e] dark:text-gray-900' /></span>
@@ -155,7 +151,7 @@ const CategoryFilter = ({ category }) => {
           }
 
           {
-            activeTab === 2 && <div className='bg-white child_category border px-10 pt-10 mt-2 rounded-lg border-gray shadow-lg'>
+            activeTab === 2 && <div className='bg-white dark:bg-gray-800 child_category border px-10 pt-10 mt-2 rounded-lg border-gray shadow-lg'>
               <Swiper
                 navigation={{
                   nextEl: '.swiper-button-next',
@@ -195,9 +191,8 @@ const CategoryFilter = ({ category }) => {
                   ))
                 }
 
-
-                <div className='swiper-button-next slide_next_btn'><FaAngleRight className='text-white hover:text-primary text-2xl duration-200' /></div>
-                <div className='swiper-button-prev slide_prev_btn'><FaAngleLeft className='text-white hover:text-primary text-2xl duration-200' /></div>
+                <div className='swiper-button-next slide_next_btn bg-white dark:bg-gray-700'><FaAngleRight className='text-[#05264e] dark:text-white hover:text-[#3c65f5] text-2xl duration-200' /></div>
+                <div className='swiper-button-prev slide_prev_btn bg-white dark:bg-gray-700'><FaAngleLeft className='text-[#05264e] dark:text-white hover:text-[#3c65f5] text-2xl duration-200 ' /></div>
               </Swiper>
             </div>
           }
