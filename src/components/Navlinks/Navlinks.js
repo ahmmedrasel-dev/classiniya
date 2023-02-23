@@ -4,13 +4,14 @@ import { BsFillCaretDownFill } from 'react-icons/bs'
 
 const Navlinks = () => {
   const [category, setCategory] = useState([]);
-
   useEffect(() => {
-    fetch('fakeData/category.json')
-      .then(res => res.json())
-      .then(data => setCategory(data))
+    const loadCategory = async () => {
+      const response = await fetch('/fakeData/category.json');
+      const data = await response.json();
+      setCategory(data);
+    }
+    loadCategory()
   }, [])
-
   return (
     <>
       <li className='flex lg:items-center'><NavLink to="/" className="lg:text-sm xl:text-lg text-[#05264e] dark:text-white">Home </NavLink></li>

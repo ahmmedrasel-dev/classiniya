@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.css'
 import { NavLink } from 'react-router-dom';
 import Navlinks from '../../Navlinks/Navlinks'
+import { BsFillCaretDownFill } from 'react-icons/bs';
 
 const Navbar = ({ isSticky }) => {
 

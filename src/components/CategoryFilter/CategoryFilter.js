@@ -67,9 +67,9 @@ const CategoryFilter = ({ category }) => {
         </div>
 
         <div className="flex justify-between gap-2 tab-button">
-          <div onClick={() => handleTabClick(1)} className={`bg-slate-100 dark:bg-gray-900 shadow-md flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders className='dark:text-base-100' /></span><span className='dark:text-base-100'>Filters</span></div>
+          <div onClick={() => handleTabClick(1)} className={`bg-slate-100 dark:bg-gray-900 shadow-md flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer ${activeTab === 1 ? 'Active' : ''}`}><span><BsSliders className='dark:text-white' /></span><span className='dark:text-white'>Filters</span></div>
 
-          <div onClick={() => handleTabClick(2)} className={`bg-slate-100 dark:bg-gray-900 flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages className='dark:text-base-100' /></span><span className='dark:text-base-100'>Category</span></div>
+          <div onClick={() => handleTabClick(2)} className={`bg-slate-100 dark:bg-gray-900 flex items-center gap-2 w-1/2 border dark:border-0 p-4 rounded-md justify-center border-gray cursor-pointer shadow-md ${activeTab === 2 ? 'Active' : ''}`}><span><BsImages className='dark:text-white' /></span><span className='dark:text-white'>Category</span></div>
         </div>
 
         <div className="tab_content">
@@ -88,7 +88,7 @@ const CategoryFilter = ({ category }) => {
 
                 <div className='flex items-center w-full relative'>
                   <span className='mr-2 absolute left-2'><BsBookmark className='text-[#05264e] dark:text-gray-900' /></span>
-                  <input className='input input-bordered input-md w-full px-8' type="text" placeholder='Waht are you looking for?' />
+                  <input className='input input-bordered input-md w-full px-8 bg-white' type="text" placeholder='Waht are you looking for?' />
                 </div>
 
                 <div className='flex items-center w-full relative'>
@@ -115,11 +115,11 @@ const CategoryFilter = ({ category }) => {
 
                 <div className='flex items-center w-full relative'>
                   <span className='mr-2 absolute left-2'><GrLocation className='text-secondary dark:text-gray-900' /></span>
-                  <input className='input input-bordered input-md w-full px-8' type="text" placeholder='Where to look?' />
+                  <input className='input input-bordered input-md w-full px-8 bg-white' type="text" placeholder='Where to look?' />
                 </div>
 
                 <div className='flex items-center w-full'>
-                  <button className='btn bg-[#3c65f5] border-0 text-base-100 w-full mx-auto hover:bg-secondary rounded-full capitalize'><BsSearch className='mr-3 text-white text-xl' /> Search</button>
+                  <button className='btn bg-[#3c65f5] border-0 text-white w-full mx-auto hover:bg-secondary rounded-full capitalize'><BsSearch className='mr-3 text-white text-xl' /> Search</button>
                 </div>
               </div>
 
@@ -146,7 +146,7 @@ const CategoryFilter = ({ category }) => {
                 )
               }
 
-              <button className='btn bg-[#3c65f5] border-0 capitalize' onClick={() => setShowMoreOption(!showMoreOption)}>{!showMoreOption ? <FaPlus className='mr-2' /> : <IoClose className='mr-2' />}{!showMoreOption ? 'More' : 'Close'} Options</button>
+              <button className='btn bg-[#3c65f5] border-0 capitalize text-white' onClick={() => setShowMoreOption(!showMoreOption)}>{!showMoreOption ? <FaPlus className='mr-2' /> : <IoClose className='mr-2' />}{!showMoreOption ? 'More' : 'Close'} Options</button>
             </div>
           }
 

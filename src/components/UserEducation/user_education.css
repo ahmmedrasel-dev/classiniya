@@ -1,0 +1,18 @@
+.edu_container {
+	position: relative;
+}
+
+.edu_container:after {
+	border-left: 2px dashed rgba(33, 58, 137, 0.15);
+	content: "";
+	height: calc(100% - 52px);
+	width: 2px;
+	left: -32px;
+	position: absolute;
+	top: 55px;
+}
+.circle {
+	position: absolute;
+	left: -50px;
+	top: 5px;
+}

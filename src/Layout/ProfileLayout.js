@@ -4,7 +4,7 @@ import Navlinks from '../components/Navlinks/Navlinks';
 import Footer from '../components/Shared/Footer/Footer';
 import Navbar from '../components/Shared/Navbar/Navbar';
 
-const Main = () => {
+const ProfileLayout = () => {
   const [isSticky, setIsSticky] = useState(false);
   const scrollRef = useRef(null);
 
@@ -25,7 +25,6 @@ const Main = () => {
         <div ref={scrollRef} className="drawer-content" onScroll={handleScroll} >
           <Navbar isSticky={isSticky}></Navbar>
           <Outlet></Outlet>
-          <Footer></Footer>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -38,4 +37,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default ProfileLayout;

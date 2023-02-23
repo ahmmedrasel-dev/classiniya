@@ -1,0 +1,38 @@
+.banner_user {
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	border-radius: 8px;
+	padding: 180px 35px 35px 50px;
+	position: relative;
+	margin-bottom: 30px;
+	z-index: 0;
+}
+
+.profile_pto {
+	position: relative;
+}
+
+.profile_pto a {
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	width: 95px;
+}
+
+.profile_pto a img {
+	width: 100%;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.12);
+}
+
+.profile_pto a {
+	position: relative;
+}
+
+.verifed_profile {
+	position: absolute;
+	top: 76%;
+	left: 61%;
+}

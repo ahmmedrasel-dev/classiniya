@@ -4,9 +4,11 @@ import { FiDribbble } from 'react-icons/fi';
 import { FaBehance } from 'react-icons/fa';
 import { SiNetlify } from 'react-icons/si';
 import { MdLocationOn } from 'react-icons/md';
+import { useNavigate } from 'react-router';
 
 const SingleCardItem = ({ profile }) => {
-  const { name, location, skills, profile_photo, cover_photo, label, skill_tag, flag } = profile;
+  const navigate = useNavigate();
+  const { _id, name, location, skills, profile_photo, cover_photo, label, skill_tag, flag } = profile;
   return (
     <div className="card_container rounded-lg mb-8 bg-slate-100 dark:bg-gray-900 border-slate-300 dark:border-gray-700 border">
       <div className="card_heading">
@@ -20,7 +22,6 @@ const SingleCardItem = ({ profile }) => {
           <a href="/">
             <img src={profile_photo} alt="" />
           </a>
-
           <div className='verifed_profile tooltip' data-tip="Verified">
             <BsFillPatchCheckFill className='text-blue-600 text-xl' />
           </div>
@@ -66,7 +67,7 @@ const SingleCardItem = ({ profile }) => {
       <div className="divider"></div>
 
       <div className="card_footer flex justify-between">
-        <button className='btn bg-[#3c65f5] text-white border-0 w-full hover:bg-[#05264e] capitalize'>View Profile</button>
+        <button onClick={() => navigate(`/profile/${_id}`)} className='btn bg-[#3c65f5] text-white border-0 w-full hover:bg-[#05264e] capitalize'>View Profile</button>
       </div>
     </div>
   );

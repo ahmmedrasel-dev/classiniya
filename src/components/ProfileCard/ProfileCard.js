@@ -1,10 +1,10 @@
 import React from 'react';
-import profile from './data/profileInfo';
+import { useLoaderData } from 'react-router';
 import './profilecard.css'
 import SingleCardItem from './SingleCardItem';
 
 const ProfileCard = () => {
-
+  const profile = useLoaderData();
   return (
     <div className='profile_card py-16 bg-white dark:bg-gray-800'>
       <div className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4">
