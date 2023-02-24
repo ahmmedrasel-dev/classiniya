@@ -1,0 +1,21 @@
+/* .img_wraper {
+	position: relative;
+}
+.img_wraper::after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	background-color: #05264e61;
+	z-index: 1;
+	transition: all linear 0.3s;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.img_wraper:hover::after {
+	transform: scale(1);
+} */

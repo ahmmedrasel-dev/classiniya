@@ -7,6 +7,9 @@ import UserEducation from '../../components/UserEducation/UserEducation';
 import UserWorkExperience from '../../components/UserWorkExperience/UserWorkExperience';
 import { RxPerson } from 'react-icons/rx';
 import { BsTranslate } from 'react-icons/bs';
+import ModalImage from "react-modal-image";
+import './portfolio.css'
+import PortfolioModal from '../../components/PortfolioModal/PortfolioModal';
 const Profile = () => {
   const { profileId } = useParams();
   const [profileInfo, setProfileInfo] = useState(null);
@@ -33,7 +36,7 @@ const Profile = () => {
           <ProfileCover profileInfo={profileInfo}></ProfileCover>
         </div>
 
-        <div className='flex justify-between gap-8'>
+        <div className='flex flex-col lg:flex-row justify-between lg:gap-8 gap-4 p-4'>
           <div className='lg:w-[75%] w-full main_content flex flex-col gap-8'>
             <div className='about bg-slate-100 dark:bg-gray-900 p-6 rounded-lg'>
               <UserAbout></UserAbout>
@@ -45,6 +48,15 @@ const Profile = () => {
 
             <div className='education bg-slate-100 dark:bg-gray-900 p-6 rounded-lg'>
               <UserWorkExperience profileInfo={profileInfo} />
+            </div>
+
+            <div className='education bg-slate-100 dark:bg-gray-900 p-6 rounded-lg'>
+              <h3 className='text-lg font-bold mb-4 text-gray-700 dark:text-white'>Portfolio</h3>
+              <div className='grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-4'>
+                <PortfolioModal
+                  images={profileInfo.portfolio}
+                ></PortfolioModal>
+              </div>
             </div>
           </div>
 
