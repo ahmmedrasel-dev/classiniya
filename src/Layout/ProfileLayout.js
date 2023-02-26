@@ -22,7 +22,7 @@ const ProfileLayout = () => {
     <>
       <div className="drawer drawer-end">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-        <div ref={scrollRef} className="drawer-content" onScroll={handleScroll} >
+        <div ref={scrollRef} className="drawer-content bg-white" onScroll={handleScroll} >
           <Navbar isSticky={isSticky}></Navbar>
           <Outlet></Outlet>
         </div>

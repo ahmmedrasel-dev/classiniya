@@ -7,8 +7,8 @@ const Navbar = ({ isSticky }) => {
 
   return (
     <header className={`flex items-center justify-between ${isSticky ? 'sticky' : ''}`}>
-      <div className="navbar dark:bg-gray-900 bg-slate-300 lg:w-[70%] w-full justify-between lg:px-8">
-        <a href='/' className="btn btn-ghost normal-case text-xl text-[#05264e] dark:text-white">Classiniya</a>
+      <div className="navbar bg-[#2e3f6e] text-white lg:w-[70%] w-full justify-between lg:px-8">
+        <a href='/' className="btn btn-ghost normal-case text-xl text-white">Classiniya</a>
 
         <div className='flex:none'>
           <label htmlFor="my-drawer" className="btn btn-primary drawer-button lg:hidden">
@@ -23,9 +23,9 @@ const Navbar = ({ isSticky }) => {
         </div>
 
       </div>
-      <div className="navbar hidden lg:flex lg:w-[30%] justify-end dark:bg-slate-700 bg-slate-50 lg:px-8">
+      <div className="navbar hidden lg:flex lg:w-[30%] justify-end bg-[#3d528b] lg:px-8 ">
         <ul>
-          <NavLink className="mx-4 text-[#05264e] hover:text-[#3c65f5] dark:text-white">Register</NavLink>
+          <NavLink className="mx-4 hover:text-[#3c65f5] text-white">Register</NavLink>
           <button className='btn bg-[#3c65f5] dark:bg-white dark:text-gray-900 border-0 hover:bg-[#05264e] text-white'>Sign in</button>
         </ul>
       </div>

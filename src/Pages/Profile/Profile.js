@@ -30,11 +30,9 @@ const Profile = () => {
   }
 
   return (
-    <section className='bg-white dark:bg-gray-800'>
+    <section className='bg-white dark:bg-gray-800 py-4'>
       <div className='xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md w-full mx-auto pb-10'>
-        <div className="">
-          <ProfileCover profileInfo={profileInfo}></ProfileCover>
-        </div>
+        <ProfileCover profileInfo={profileInfo}></ProfileCover>
 
         <div className='flex flex-col lg:flex-row justify-between lg:gap-8 gap-4 p-4'>
           <div className='lg:w-[75%] w-full main_content flex flex-col gap-8'>
