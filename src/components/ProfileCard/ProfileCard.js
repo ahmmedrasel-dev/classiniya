@@ -12,7 +12,7 @@ const ProfileCard = ({ isLoading }) => {
         <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 xl:gap-6">
           {
             isLoading ?
-              <Loading />
+              <Loading count={profile.length} />
               :
               profile.map(item => <SingleCardItem
                 key={item._id}
