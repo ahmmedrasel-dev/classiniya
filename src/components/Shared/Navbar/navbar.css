@@ -45,3 +45,42 @@ header {
 	left: 0;
 	border-bottom: 1px solid #cdd3e3;
 }
+
+.my_dropdown {
+	position: relative;
+}
+
+.my_dropdown li a {
+	display: block;
+	display: flex;
+	align-items: center;
+}
+
+.dropdown_menu li {
+	margin: 0;
+	padding: 0;
+}
+
+.my_dropdown li:hover > .dropdown_menu {
+	display: block;
+}
+
+.dropdown_menu {
+	display: none;
+	position: absolute;
+	top: 75%;
+	left: -40px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.dropdown_menu li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dropdown_menu li a:hover {
+	color: #3c65f5;
+}

@@ -2,6 +2,10 @@ import React from 'react';
 import './navbar.css'
 import { NavLink } from 'react-router-dom';
 import Navlinks from '../../Navlinks/Navlinks'
+import { BsFillCaretDownFill } from 'react-icons/bs';
+import { BiWorld } from 'react-icons/bi'
+import { MdAddToPhotos, MdPostAdd } from 'react-icons/md';
+import { FaUser } from 'react-icons/fa';
 
 const Navbar = ({ isSticky }) => {
 
@@ -24,9 +28,24 @@ const Navbar = ({ isSticky }) => {
 
       </div>
       <div className="navbar hidden lg:flex lg:w-[30%] justify-end bg-[#3d528b] lg:px-8 ">
-        <ul>
-          <NavLink className="mx-4 hover:text-[#3c65f5] text-white">Register</NavLink>
-          <button className='btn bg-[#3c65f5] dark:bg-white dark:text-gray-900 border-0 hover:bg-[#05264e] text-white'>Sign in</button>
+        <ul className='my_dropdown gap-6'>
+          <li>
+            <a className='flex justify-start gap-2 text-white'>
+              <BiWorld className='text-white' />
+              En
+              <BsFillCaretDownFill className='text-white text-[13px]' />
+            </a>
+            <ul className="bg-white dropdown_menu text-[#05264e]">
+              <li><a>English</a></li>
+              <li><a>Spanish</a></li>
+              <li><a>Portugues</a></li>
+              <li><a>Rusain</a></li>
+              <li><a>Japanese</a></li>
+              <li><a>French</a></li>
+            </ul>
+          </li>
+          <NavLink className="mx-4 hover:text-[#3c65f5] text-white flex items-center gap-2"><FaUser />Sign In</NavLink>
+          <button className='btn bg-[#3c65f5] dark:bg-white dark:text-gray-900 border-0 hover:bg-[#05264e] text-white capitalize'>Add Listing <MdAddToPhotos className='ml-2' /></button>
         </ul>
       </div>
     </header>
