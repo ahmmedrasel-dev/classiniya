@@ -6,7 +6,8 @@ import ProfileCard from '../../components/ProfileCard/ProfileCard';
 
 const Category = () => {
   const { pathname } = useLocation();
-  const [singleCategory, setSingleCategory] = useState(null);
+  const [isLoading, setIsLoading] = useState(true)
+  const [singleCategory, setSingleCategory] = useState([]);
 
   useEffect(() => {
     const fetchSingleCategory = async () => {
@@ -14,19 +15,16 @@ const Category = () => {
       const data = await response.json();
       const category = data.find(item => item.path === pathname.replace('/', ''));
       setSingleCategory(category)
+      setIsLoading(false)
     }
     fetchSingleCategory();
   }, [pathname]);
 
-  if (!singleCategory) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <main className='bg-white dark:bg-gray-800'>
-      <CategoryHead category={singleCategory}></CategoryHead>
-      <CategoryFilter category={singleCategory}></CategoryFilter>
-      <ProfileCard></ProfileCard>
+      <CategoryHead category={singleCategory} isLoading={isLoading}></CategoryHead>
+      <CategoryFilter category={singleCategory} isLoading={isLoading}></CategoryFilter>
+      <ProfileCard isLoading={isLoading}></ProfileCard>
     </main>
   );
 };

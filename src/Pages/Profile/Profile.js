@@ -10,6 +10,7 @@ import { BsTranslate } from 'react-icons/bs';
 import ModalImage from "react-modal-image";
 import './portfolio.css'
 import PortfolioModal from '../../components/PortfolioModal/PortfolioModal';
+import Loading from '../../components/Shared/Loading/Loading';
 const Profile = () => {
   const { profileId } = useParams();
   const [profileInfo, setProfileInfo] = useState(null);
@@ -26,7 +27,7 @@ const Profile = () => {
   }, [profileId])
 
   if (!profileInfo) {
-    return <span>Loading...</span>
+    return <Loading></Loading>
   }
 
   return (
