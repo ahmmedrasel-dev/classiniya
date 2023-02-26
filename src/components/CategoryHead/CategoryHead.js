@@ -2,6 +2,7 @@ import React from 'react';
 import './category_head.css';
 import bg from '../../assets/images/category_head_bg.jpeg';
 import { Parallax } from 'react-scroll-parallax';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 
 const CategoryHead = ({ category }) => {
   const { name, image } = category;
@@ -24,6 +25,12 @@ const CategoryHead = ({ category }) => {
               </div>
             </Parallax>
           </div>
+        </div>
+
+        <div class="header-sec-link ">
+          <a href="#main-sec" class="custom-scroll-link flex justify-center items-center">
+            <FaAngleDoubleDown className='text-[#3c65f5] mt-10' />
+          </a>
         </div>
       </Parallax>
 
