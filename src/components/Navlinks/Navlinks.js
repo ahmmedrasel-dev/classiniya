@@ -14,9 +14,9 @@ const Navlinks = () => {
   }, [])
   return (
     <>
-      <li className='flex lg:items-center'><NavLink to="/" className=" text-white">Home </NavLink></li>
+      <li className='flex xl:items-center'><NavLink to="/" className="dark:text-white xl:text-white text-[#05264e]">Home </NavLink></li>
       {
-        category.map(item => <li key={item._id} className='flex lg:items-center'><NavLink to={`/${item.path}`} className=" text-white">{item.name}</NavLink><BsFillCaretDownFill className='text-gray text-[13px]' />
+        category.map(item => <li key={item._id} className='flex xl:items-center'><NavLink to={`/${item.path}`} className=" dark:text-white text-[#05264e] xl:text-white">{item.name}</NavLink><BsFillCaretDownFill className='text-gray text-[13px]' />
         </li>)
       }
     </>

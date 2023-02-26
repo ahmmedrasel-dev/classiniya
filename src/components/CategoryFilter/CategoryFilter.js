@@ -40,15 +40,15 @@ const CategoryFilter = ({ category }) => {
 
   return (
     <section className='mt-2'>
-      <div className="w-full xl:max-w-screen-xl lg:max-w-screen-lg mx-auto">
+      <div className="w-full xl:max-w-screen-xl lg:max-w-screen-lg mx-auto p-4">
         <div className='result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-slate-100 dark:bg-gray-900'>
-          <div className='w-[65%]'>
+          <div className='w-[60%]'>
             <h2 className='text-xl font-bold dark:text-slate-100'>Results For: <span className='text-[#3c65f5]'>{category.name}</span></h2>
           </div>
-          <div className='flex justify-between items-center w-[35%]'>
-            <span className='mr-2 dark:text-base-100'>Sort by:</span>
+          <div className='flex justify-between items-center w-[40%]'>
+            <p className='mr-2 dark:text-white'>Sort By:</p>
             <Select
-              className="w-[250px]"
+              className="w-[200px]"
               classNamePrefix="select"
               name="color"
               defaultValue={shortOpton[0]}

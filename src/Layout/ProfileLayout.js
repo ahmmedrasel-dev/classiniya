@@ -28,7 +28,7 @@ const ProfileLayout = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-[80%] bg-white dark:bg-gray-800 text-base-content">
+          <ul className="menu p-4 w-[80%] lg:w-[40%] bg-white dark:bg-gray-800 text-[#05264e]">
             <Navlinks></Navlinks>
           </ul>
         </div>
