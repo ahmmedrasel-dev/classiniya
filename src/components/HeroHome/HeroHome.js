@@ -13,7 +13,7 @@ const HeroHome = () => {
       <div className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="heru_left lg:p-12 xl:p-20 p-4">
-            <h1 className='lg:text-6xl text-5xl font-black text-[#05264e] dark:text-slate-100'>Find Jobs, <br />Hire Creatives</h1>
+            <h1 className='lg:text-6xl text-4xl font-black text-[#05264e] dark:text-slate-100'>Find Jobs, <br />Hire Creatives</h1>
             <p className='py-8 text-[#05264ee1] dark:text-slate-300'>Each month, more than 3 million job seekers turn to website in their search for work, making over 140,000 applications every single day</p>
 
             <div className="hero_action">
