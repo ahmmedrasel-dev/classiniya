@@ -46,11 +46,11 @@ const CategoryFilter = ({ category, isLoading }) => {
           <Loading />
           :
           <div className="w-full xl:max-w-screen-xl lg:max-w-screen-lg mx-auto p-4">
-            <div className='result flex justify-between items-center py-4 px-6 rounded-lg mb-10 bg-slate-100 dark:bg-gray-900'>
-              <div className='w-[60%]'>
-                <h2 className='text-xl font-bold dark:text-slate-100'>Results For: <span className='text-[#3c65f5]'>{category.name}</span></h2>
+            <div className='result flex flex-col lg:flex-row justify-between items-center py-4 px-6 rounded-lg mb-10 bg-slate-100 dark:bg-gray-900 gap-4'>
+              <div className='lg:w-[60%] w-full'>
+                <h2 className='text-xl font-bold dark:text-slate-100'>Results For: <span className='text-[#3c65f5] block lg:inline'>{category.name}</span></h2>
               </div>
-              <div className='flex justify-between items-center w-[40%]'>
+              <div className='flex justify-between items-center lg:w-[40%] w-full'>
                 <p className='mr-2 dark:text-white'>Sort By:</p>
                 <Select
                   className="w-[200px]"
@@ -80,7 +80,7 @@ const CategoryFilter = ({ category, isLoading }) => {
             <div className="tab_content">
               {
                 activeTab === 1 && <div className='bg-slate-100 dark:bg-gray-900 border dark:border-0 p-4 mt-2 rounded-lg border-gray shadow-lg'>
-                  <div className='flex justify-between gap-4'>
+                  <div className='flex flex-col lg:flex-row justify-between gap-4'>
                     <div className='flex items-center w-full relative'>
                       <span className='mr-2 absolute left-2 z-50'><BsListUl className='text-[#05264e] dark:text-gray-900' /></span>
                       <Select
@@ -107,7 +107,7 @@ const CategoryFilter = ({ category, isLoading }) => {
                     </div>
                   </div>
 
-                  <div className='flex justify-between gap-4'>
+                  <div className='flex flex-col lg:flex-row justify-between gap-4'>
                     <div className='flex items-center w-full relative'>
                       <span className='mr-2 absolute left-2 z-[1]'><BsListUl className='text-[#05264e] dark:text-gray-900' /></span>
                       <Select
@@ -123,7 +123,7 @@ const CategoryFilter = ({ category, isLoading }) => {
                       <input className='input input-bordered input-md w-full px-8 bg-white' type="text" placeholder='Where to look?' />
                     </div>
 
-                    <div className='flex items-center w-full'>
+                    <div className='flex items-center w-full mb-4 lg:mb-0'>
                       <button className='btn bg-[#3c65f5] border-0 text-white w-full mx-auto hover:bg-secondary rounded-full capitalize'><BsSearch className='mr-3 text-white text-xl' /> Search</button>
                     </div>
                   </div>

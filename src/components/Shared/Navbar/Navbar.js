@@ -1,11 +1,11 @@
 import React from 'react';
 import './navbar.css'
 import { NavLink } from 'react-router-dom';
-import Navlinks from '../../Navlinks/Navlinks'
 import { BsFillCaretDownFill } from 'react-icons/bs';
 import { BiWorld } from 'react-icons/bi'
-import { MdAddToPhotos, MdPostAdd } from 'react-icons/md';
+import { MdAddToPhotos } from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
+import MegaMenus from './MegaMenus';
 
 const Navbar = ({ isSticky }) => {
 
@@ -21,9 +21,7 @@ const Navbar = ({ isSticky }) => {
         </div>
 
         <div className="hidden xl:flex">
-          <ul className="main_menu flex justify-between">
-            <Navlinks></Navlinks>
-          </ul>
+          <MegaMenus />
         </div>
 
       </div>

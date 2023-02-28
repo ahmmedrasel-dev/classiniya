@@ -4,38 +4,6 @@ header {
 	width: 100%;
 }
 
-.main_menu li {
-	margin: 0 15px;
-}
-
-.main_menu li a {
-	position: relative;
-	transition: all linear 0.3s;
-}
-
-.main_menu li .active {
-	color: var(--primary);
-}
-
-.main_menu li a:hover::before {
-	transition: all linear 0.3s;
-}
-
-.main_menu li a:hover::before,
-.main_menu li a.active:hover::before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 2px;
-	background-color: var(--primary);
-	left: 0;
-	bottom: -10px;
-}
-
-.main_menu li a:hover {
-	color: var(--primary);
-}
-
 .sticky {
 	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
 	position: fixed;

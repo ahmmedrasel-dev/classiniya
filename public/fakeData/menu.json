@@ -1,0 +1,96 @@
+{
+	"menus": [
+		{
+			"id": 1,
+			"parent_item": "Home",
+			"link": "/",
+			"dropdown": []
+		},
+		{
+			"id": 2,
+			"parent_item": "Graphics & Design",
+			"link": "/portfolio",
+			"dropdown": [
+				{
+					"id": 2.1,
+					"child_item": "Portfolio",
+					"link": "/Portfolio"
+				},
+				{
+					"id": 2.2,
+					"child_item": "Portfolio Details",
+					"link": "/single-portfolio"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"parent_item": "Digital Marketing",
+			"link": "/shop",
+			"dropdown": [],
+			"megaMenus": [
+				{
+					"id": 3.1,
+					"megaMenuTitle": "shop layout",
+					"link": "/shop-layout",
+					"megamenuItems": [
+						{
+							"id": 3.21,
+							"child_item": "Shop 1",
+							"link": "/shop"
+						},
+						{
+							"id": 3.22,
+							"child_item": "Shop 2",
+							"link": "/shop"
+						},
+						{
+							"id": 3.23,
+							"child_item": "Shop 3",
+							"link": "/shop"
+						}
+					]
+				},
+				{
+					"id": 3.2,
+					"megaMenuTitle": "Product Details Layout",
+					"link": "/product-layout",
+					"megamenuItems": [
+						{
+							"id": 3.232,
+							"child_item": "Product Layout 1",
+							"link": "/shop"
+						},
+						{
+							"id": 3.233,
+							"child_item": "Product Layout 2",
+							"link": "/shop"
+						},
+						{
+							"id": 3.2343,
+							"child_item": "Product Layout 3",
+							"link": "/shop"
+						},
+						{
+							"id": 3.5343,
+							"child_item": "Product Layout 4",
+							"link": "/shop"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 4,
+			"parent_item": "Programming & Tech",
+			"link": "/blog",
+			"dropdown": []
+		},
+		{
+			"id": 5,
+			"parent_item": "AI Model",
+			"link": "/pages",
+			"dropdown": []
+		}
+	]
+}
