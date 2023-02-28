@@ -7,7 +7,6 @@ import UserEducation from '../../components/UserEducation/UserEducation';
 import UserWorkExperience from '../../components/UserWorkExperience/UserWorkExperience';
 import { RxPerson } from 'react-icons/rx';
 import { BsTranslate } from 'react-icons/bs';
-import ModalImage from "react-modal-image";
 import './portfolio.css'
 import PortfolioModal from '../../components/PortfolioModal/PortfolioModal';
 import Loading from '../../components/Shared/Loading/Loading';
@@ -32,7 +31,7 @@ const Profile = () => {
 
   return (
     <section className='bg-white dark:bg-gray-800 py-4'>
-      <div className='xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md w-full mx-auto pb-10'>
+      <div className='xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md w-full mx-auto lg:pb-10 p-4'>
         <ProfileCover profileInfo={profileInfo}></ProfileCover>
 
         <div className='flex flex-col lg:flex-row justify-between lg:gap-8 gap-4 p-4'>

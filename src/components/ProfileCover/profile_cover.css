@@ -36,3 +36,9 @@
 	top: 76%;
 	left: 61%;
 }
+
+@media (max-width: 576px) {
+	.banner_user {
+		padding: 61px 0px 30px 0px;
+	}
+}

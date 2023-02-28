@@ -8,8 +8,8 @@ const ProfileCover = ({ profileInfo }) => {
   return (
     <div className='banner_user' style={{ background: `url(${cover_photo})` }}>
       <div className="banner_content">
-        <div className="flex justify-between items-center">
-          <div className='flex justify-start gap-8 items-center'>
+        <div className="flex lg:flex-row flex-col justify-between items-center">
+          <div className='flex lg:flex-row flex-col justify-start gap-8 items-center'>
             <div className="profile_pto">
               <a href="/">
                 <img src={profile_photo} alt="" />
@@ -19,10 +19,10 @@ const ProfileCover = ({ profileInfo }) => {
               </div>
             </div>
 
-            <div>
+            <div className='text-center lg:text-left'>
               <h2 className='text-2xl font-bold text-white mb-3'>{name}</h2>
 
-              <div className='flex justify-start gap-8 items-center'>
+              <div className='flex lg:flex-row flex-col justify-start lg:gap-8 gap-4 items-center'>
                 <span className='text-md text-white'>{profession}</span>
                 <span className='text-md text-white flex items-center gap-1'><SlLocationPin /> {location}</span>
               </div>
@@ -36,7 +36,7 @@ const ProfileCover = ({ profileInfo }) => {
             </div>
           </div>
 
-          <div>
+          <div className='lg:mt-0 mt-8'>
             <button className='btn bg-[#3c65f5] border-0 text-white rounded-full w-40 capitalize hover:bg-[#05264e]'>Hire Me</button>
           </div>
         </div>
