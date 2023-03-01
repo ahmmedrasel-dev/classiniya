@@ -1,96 +1,267 @@
-{
-	"menus": [
-		{
-			"id": 1,
-			"parent_item": "Home",
-			"link": "/",
-			"dropdown": []
-		},
-		{
-			"id": 2,
-			"parent_item": "Graphics & Design",
-			"link": "/portfolio",
-			"dropdown": [
-				{
-					"id": 2.1,
-					"child_item": "Portfolio",
-					"link": "/Portfolio"
-				},
-				{
-					"id": 2.2,
-					"child_item": "Portfolio Details",
-					"link": "/single-portfolio"
-				}
-			]
-		},
-		{
-			"id": 3,
-			"parent_item": "Digital Marketing",
-			"link": "/shop",
-			"dropdown": [],
-			"megaMenus": [
-				{
-					"id": 3.1,
-					"megaMenuTitle": "shop layout",
-					"link": "/shop-layout",
-					"megamenuItems": [
-						{
-							"id": 3.21,
-							"child_item": "Shop 1",
-							"link": "/shop"
-						},
-						{
-							"id": 3.22,
-							"child_item": "Shop 2",
-							"link": "/shop"
-						},
-						{
-							"id": 3.23,
-							"child_item": "Shop 3",
-							"link": "/shop"
-						}
-					]
-				},
-				{
-					"id": 3.2,
-					"megaMenuTitle": "Product Details Layout",
-					"link": "/product-layout",
-					"megamenuItems": [
-						{
-							"id": 3.232,
-							"child_item": "Product Layout 1",
-							"link": "/shop"
-						},
-						{
-							"id": 3.233,
-							"child_item": "Product Layout 2",
-							"link": "/shop"
-						},
-						{
-							"id": 3.2343,
-							"child_item": "Product Layout 3",
-							"link": "/shop"
-						},
-						{
-							"id": 3.5343,
-							"child_item": "Product Layout 4",
-							"link": "/shop"
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": 4,
-			"parent_item": "Programming & Tech",
-			"link": "/blog",
-			"dropdown": []
-		},
-		{
-			"id": 5,
-			"parent_item": "AI Model",
-			"link": "/pages",
-			"dropdown": []
-		}
-	]
-}
+[
+	{
+		"_id": 1,
+		"main_menu": "Home",
+		"link": "home",
+		"mega_menu": []
+	},
+	{
+		"_id": 2,
+		"main_menu": "Graphics & Design",
+		"link": "graphics-design",
+		"mega_menu": [
+			{
+				"mega_title": "Logo & Brand Identity",
+				"mega_item": [
+					"Logo Design",
+					"Brand Style Guides",
+					"Fonts & Typography",
+					"Business Cards & Stationery"
+				]
+			},
+			{
+				"mega_title": "Web & App Design",
+				"mega_item": [
+					"Website Design",
+					"App Design",
+					"UX Design",
+					"Landing Page Design",
+					"Icon Design"
+				]
+			},
+			{
+				"mega_title": "Art & Illustration",
+				"mega_item": [
+					"Illustration",
+					"AI Artists",
+					"NFT Art",
+					"Pattern Design",
+					"Portraits & Caricatures",
+					"Cartoons & Comics",
+					"Tattoo Design"
+				]
+			},
+			{
+				"mega_title": "Architecture & Building Design",
+				"mega_item": [
+					"Architecture & Interior Design",
+					"Landscape Design",
+					"Building Engineering",
+					"Building Information Modeling"
+				]
+			},
+			{
+				"mega_title": "Visual Design",
+				"mega_item": [
+					"Image Editing",
+					"Presentation Design",
+					"Infographic Design",
+					"Vector Tracing",
+					"Resume Design"
+				]
+			},
+			{
+				"mega_title": "Visual Design",
+				"mega_item": [
+					"Image Editing",
+					"Presentation Design",
+					"Infographic Design",
+					"Vector Tracing",
+					"Resume Design"
+				]
+			},
+			{
+				"mega_title": "Print Design",
+				"mega_item": [
+					"Flyer Design",
+					"Brochure Design",
+					"Poster Design",
+					"Catalog Design",
+					"Menu Design",
+					"Invitation Design"
+				]
+			},
+			{
+				"mega_title": "Packaging & Covers",
+				"mega_item": [
+					"Packaging & Label Design",
+					"Book Design",
+					"Album Cover Design",
+					"Podcast Cover Art",
+					"Car Wraps"
+				]
+			}
+		]
+	},
+	{
+		"_id": 3,
+		"main_menu": "Digital Marketing",
+		"link": "digital-marketing",
+		"mega_menu": [
+			{
+				"mega_title": "Search",
+				"mega_item": [
+					"Search Engine Optimization (SEO)",
+					"Search Engine Marketing (SEM)",
+					"Local SEO",
+					"E-Commerce SEO",
+					"Video SEO"
+				]
+			},
+			{
+				"mega_title": "Methods & Techniques",
+				"mega_item": [
+					"Video Marketing",
+					"E-Commerce Marketing",
+					"Email Marketing",
+					"Guest Posting",
+					"Affiliate Marketing",
+					"Display Advertising",
+					"Public Relations",
+					"Text Message Marketing"
+				]
+			},
+			{
+				"mega_title": "Analytics & Strategy",
+				"mega_item": [
+					"Marketing Strategy",
+					"Marketing Advice",
+					"Web Analytics",
+					"Portraits & Caricatures",
+					"Cartoons & Comics"
+				]
+			},
+			{
+				"mega_title": "Social",
+				"mega_item": [
+					"Social Media Marketing",
+					"Social Media Advertising",
+					"Influencer Marketing",
+					"Community Management"
+				]
+			},
+			{
+				"mega_title": "Industry & Purpose-Specific",
+				"mega_item": [
+					"Music Promotion",
+					"Podcast Marketing",
+					"Book & eBook Marketing",
+					"Mobile App Marketing",
+					"Resume Design"
+				]
+			},
+			{
+				"mega_title": "Miscellaneous",
+				"mega_item": [
+					"Crowdfunding",
+					"Other",
+					"Vector Tracing",
+					"Resume Design"
+				]
+			}
+		]
+	},
+	{
+		"_id": 4,
+		"main_menu": "Programming & Tech",
+		"link": "programming-tech",
+		"mega_menu": [
+			{
+				"mega_title": "Websites",
+				"mega_item": [
+					"Website Development",
+					"Website Maintenance",
+					"Business Websites",
+					"E-Commerce Development",
+					"Landing Pages",
+					"Blogs"
+				]
+			},
+			{
+				"mega_title": "Application Development",
+				"mega_item": [
+					"Mobile Apps",
+					"Web Programming",
+					"Desktop Applications",
+					"Game Development",
+					"AI Applications",
+					"Chatbots Development"
+				]
+			},
+			{
+				"mega_title": "Data",
+				"mega_item": [
+					"Databases",
+					"Data Processing",
+					"Data Engineering",
+					"Data Science & AI",
+					"Cartoons & Comics"
+				]
+			},
+			{
+				"mega_title": "Website Platforms",
+				"mega_item": ["WordPress", "Shopify", "Wix", "Custom Websites"]
+			},
+			{
+				"mega_title": "Support & Cybersecurity",
+				"mega_item": [
+					"DevOps & Cloud",
+					"Support & IT",
+					"Cybersecurity & Data",
+					"Protection",
+					"Convert Files"
+				]
+			},
+			{
+				"mega_title": "Miscellaneous",
+				"mega_item": [
+					"Electronics Engineering",
+					"QA & Review",
+					"User Testing",
+					"Online Coding Lessons",
+					"Blockchain & Cryptocurrency",
+					"NFT Development"
+				]
+			}
+		]
+	},
+	{
+		"_id": 5,
+		"main_menu": "Ai Models",
+		"link": "ai-models",
+		"mega_menu": [
+			{
+				"mega_title": "AI Artists",
+				"mega_item": [
+					"Midjourney Artists",
+					"DALL-E Artists",
+					"Stable Diffusion Artists",
+					"E-Commerce Development",
+					"Landing Pages",
+					"Blogs"
+				]
+			},
+			{
+				"mega_title": "AI Applications",
+				"mega_item": [
+					"ChatGPT Applications",
+					"AI Web Application",
+					"OpenAI",
+					"AI Chatbots",
+					"AI Applications",
+					"Chatbots Development"
+				]
+			},
+			{
+				"mega_title": "Other Services",
+				"mega_item": [
+					"AI Music Video",
+					"AI Graphics App",
+					"Data Engineering",
+					"AI Content Editing",
+					"Fact Checking"
+				]
+			}
+		]
+	}
+]

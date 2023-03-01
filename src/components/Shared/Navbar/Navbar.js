@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './navbar.css'
 import { NavLink } from 'react-router-dom';
 import { BsFillCaretDownFill } from 'react-icons/bs';
@@ -8,6 +8,18 @@ import { FaUser } from 'react-icons/fa';
 import MegaMenus from './MegaMenus';
 
 const Navbar = ({ isSticky }) => {
+  const [menu, setMenu] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    fetch('fakeData/menu.json')
+      .then(res => res.json())
+      .then(data => setMenu(data))
+    setLoading(false)
+  }, [])
+
+  if (loading) {
+    return 'loading...'
+  }
 
   return (
     <header className={`flex items-center justify-between ${isSticky ? 'sticky' : ''}`}>
@@ -21,7 +33,7 @@ const Navbar = ({ isSticky }) => {
         </div>
 
         <div className="hidden xl:flex">
-          <MegaMenus />
+          <MegaMenus menu={menu} />
         </div>
 
       </div>
